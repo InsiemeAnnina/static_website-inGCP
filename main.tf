@@ -9,6 +9,12 @@ resource "google_storage_bucket" "static_site" {
   }
 }
 
+resource "google_storage_bucket_iam_member" "member" {
+  bucket = google_storage_bucket.static_site.name
+  role   = "roles/storage.objectViewer"
+  member = "allUsers"
+}
+
 resource "google_storage_bucket_object" "picture" {
   name   = "italiana-picture"
   source = "author.jpg"
