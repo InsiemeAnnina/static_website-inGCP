@@ -17,12 +17,12 @@ resource "google_storage_bucket_iam_member" "member" {
 
 resource "google_storage_bucket_object" "picture" {
   name   = "italiana-picture"
-  source = "author.jpg"
+  source = "author1.jpg"
   bucket = google_storage_bucket.static_site.name
 }
 
 resource "google_storage_bucket_object" "index" {
-  name   = "italiana-catalozza"
+  name   = "italiana-catozzella"
   source = "index.html"
   bucket = google_storage_bucket.static_site.name
 }
