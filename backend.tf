@@ -1,7 +1,7 @@
 terraform {
   required_version = ">= 1.0.11"
   backend "gcs" {
-    bucket = "bestbook"
+    bucket = "statefilebucket"
     prefix = "dev"
   }
   required_providers {
