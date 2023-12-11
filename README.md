@@ -28,4 +28,6 @@ STEPS
 
 7. Access the Web Application:
 Find the external IP address in your GCP (Cloud storage -> bucket: static-site -> index.html) and paste it in your browser.
-You should see a web page with text and an image.
+You should see a web page with text and an image, and discover what was the best book I've read this year with my favourite quote from it.
+
+8. Additional info for the reviewers: I put some real content in the website just for fun instead of Lorem Ipsum as it has been said that the content doesn't really matter. :) However, I struggled to mdisplay the image properly, and I still hasn't been able to find the answer to that problem. I hope that during the invidual feedback you will tell me what I did wrong here.
