@@ -10,5 +10,6 @@ This service provides a global content delivery network (CDN) that enable us to 
 Thanks to 'pay-as-you-go' pricing model, this solution is also very cost-effective.
 
 Some of the actions possible to implement for scaling up:
+The first actions you should take before scaling up the application is to add variables to the Terraform deployment plan. It will help you customize aspects of Terraform modules without altering the module's own source code.
 Enabling CDN mentioned above (which can be configures in Cloud Storage bucket settings) helps distributing the static content globally and reducing latensy for end users.
 In case of high traffic, it is possbile to implement Google Cloud Load Balancing for the GCS bucket that will distribute the traffic and improve availability of the website.
