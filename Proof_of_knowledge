@@ -1,0 +1,14 @@
+Method of deployment of the service:
+
+I chose to deploy the static website in GCS because it's an easy-to-set-up solution for such simple object as a static website.
+However, if there was a plan to add some dynamic content to the site, then more suitable options of deployment should be considered (i.e. by usimg a VM).
+
+Scalability:
+
+GCS is highly scalable and can handle large amounts of static content, considered that we expect a moderate website traffic.
+This service provides a global content delivery network (CDN) that enable us to deliver the content around the globe with quite low latency rates.
+Thanks to 'pay-as-you-go' pricing model, this solution is also very cost-effective.
+
+Some of the actions possible to implement for scaling up:
+Enabling CDN mentioned above (which can be configures in Cloud Storage bucket settings) helps distributing the static content globally and reducing latensy for end users.
+In case of high traffic, it is possbile to implement Google Cloud Load Balancing for the GCS bucket that will distribute the traffic and improve availability of the website.
